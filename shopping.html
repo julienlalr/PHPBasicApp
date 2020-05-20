@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LALLIER Julien</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div id="item_container">
+        <div id="checkboxs">
+          <label>
+            <input type="checkbox" id="important_check" />
+            Is important
+          </label>
+          <label>
+            <input type="checkbox" id="grocerie_check" />
+            Can be bought in groceries
+          </label>
+        </div>
+    <label>
+        Item to buy :
+        <input type="test" id="item" />
+      </label>
+      <button onclick="addItem()">Add</button>
+      <br>
+      <label>
+        Item to remove:
+        <input type="number" id="item_remove" min="1" />
+      </label>
+      <button onclick="removeItem()" type="number">Remove it</button>
+      <p>Shopping list:</p>
+      <ul id="list_items"></ul>
+    </div>
+    <script src="script.js"></script>
+  </body> 
+</html>
